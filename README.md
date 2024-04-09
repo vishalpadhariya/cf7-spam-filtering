@@ -11,9 +11,9 @@ Using this plugin you can prevent spam email submissions.
 
 ## Screenshots
 
-![BE Snapshot](https://prnt.sc/JLSkeBk9xElU)
-![FE Snapshot](https://prnt.sc/JLSkeBk9xElU)
-![FE Snapshot](https://prnt.sc/JLSkeBk9xElU)
+![BE Snapshot](https://raw.githubusercontent.com/vishalpadhariya/cf7-spam-filtering/master/screenshots/backend-snapshot.png)
+![FE Snapshot](https://raw.githubusercontent.com/vishalpadhariya/cf7-spam-filtering/master/screenshots/fe-snap1.png)
+![FE Snapshot](https://raw.githubusercontent.com/vishalpadhariya/cf7-spam-filtering/master/screenshots/fe-snap2.png)
 
 
 ## License

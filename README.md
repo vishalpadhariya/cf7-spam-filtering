@@ -1,8 +1,15 @@
 
 # CF7 Spam Filtering
 
-Using this plugin you can prevent spam email submissions.
+Requires at least: 6.0.0
 
+Tested up to: 6.5
+
+Stable tag: 1.0.0
+
+# Description
+
+Using this plugin you can prevent spam email submissions.
 
 ## Author
 

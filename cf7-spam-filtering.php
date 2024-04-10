@@ -1,10 +1,13 @@
 <?php
-
 /**
- * 
+ *
+ * CF7 Spam Filtering
+ *
+ * Contact Form 7 Spam Filteration
+ *
  * @link              https://vishalpadhariya.in/
  * @since             1.0.0
- * @package           CF7_SPAM_FILTERING
+ * @package           cf7-spam-filtering
  *
  * @wordpress-plugin
  * Plugin Name:       CF7 Spam Filtering
@@ -22,48 +25,44 @@
 /**
  * If this file is called directly, abort
  */
-if (!defined('WPINC')) {
-    die;
+if ( ! defined( 'WPINC' ) ) {
+	die;
 }
 
 /**
  * Plugin Version
  */
-define('CF7_SPAM_FILTERING_VERSION', '1.0.0');
+define( 'CF7_SPAM_FILTERING_VERSION', '1.0.0' );
 
-include_once ABSPATH . 'wp-admin/includes/plugin.php';
+require_once ABSPATH . 'wp-admin/includes/plugin.php';
 // Check if Contact Form 7 is installed and activated.
-if (!is_plugin_active('contact-form-7/wp-contact-form-7.php')) {
+if ( ! is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) {
 
-    /** Deactivate the plugin. */
-    deactivate_plugins(plugin_basename(__FILE__));
+	/** Deactivate the plugin. */
+	deactivate_plugins( plugin_basename( __FILE__ ) );
 
-    wp_die('Contact Form 7 plugin is required to activate this plugin. Please install and activate Contact Form 7.');
+	wp_die( 'Contact Form 7 plugin is required to activate this plugin. Please install and activate Contact Form 7.' );
 }
 
 
 /**
  * Fired on plugin activation
- * 
- * activate_cf7_spam_filtering
- * 
+ *
+ * Activate_cf7_spam_filtering
  */
-function activate_cf7_spam_filtering()
-{
+function activate_cf7_spam_filtering() {
 }
 
 /**
  * Fired on plugin deactivation
- * 
- * deactivate_cf7_spam_filtering
- * 
+ *
+ * Deactivate_cf7_spam_filtering
  */
-function deactivate_cf7_spam_filtering()
-{
+function deactivate_cf7_spam_filtering() {
 }
 
-register_activation_hook(__FILE__, 'activate_cf7_spam_filtering');
-register_deactivation_hook(__FILE__, 'deactivate_cf7_spam_filtering');
+register_activation_hook( __FILE__, 'activate_cf7_spam_filtering' );
+register_deactivation_hook( __FILE__, 'deactivate_cf7_spam_filtering' );
 
 
-require plugin_dir_path(__FILE__) . 'includes/class-cf7-spam-filtering.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-cf7-spam-filtering.php';
